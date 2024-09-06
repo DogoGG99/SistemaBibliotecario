@@ -10,11 +10,13 @@
 public class Libro {
     private String titulo;
     private String autor;
+    private String genero;
     private boolean prestado;
 
-    public Libro(String titulo, String autor, boolean prestado) {
+    public Libro(String titulo, String autor,String genero, boolean prestado) {
         this.titulo = titulo;
         this.autor = autor;
+        this.genero = genero;
         this.prestado = false;
     }
     // el status prestado va por defecto en false
@@ -26,6 +28,9 @@ public class Libro {
     public String getAutor(){
         return autor;
     }
+    public String getGenero(){
+        return genero;
+    }    
     public boolean isPrestado(){
         return prestado;
     }
